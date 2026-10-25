@@ -1,5 +1,12 @@
-﻿# Design-process files stay local; GitHub Pages would serve them publicly
-.impeccable/
-PRODUCT.md
-DESIGN.md
-_phone.html
+# Only the public site is published to GitHub Pages; everything else
+# in this folder (design notes, audits, screenshots) stays local.
+/*
+!/.gitignore
+!/.nojekyll
+!/index.html
+!/404.html
+!/styles.css
+!/app.js
+!/assets/
+!/robots.txt
+!/sitemap.xml

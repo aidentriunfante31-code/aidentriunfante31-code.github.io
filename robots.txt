@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aidentriunfante31-code.github.io/sitemap.xml

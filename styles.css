@@ -2,6 +2,16 @@
    Display-card gray ground, white chip stock, deck-cover green,
    one saffron flash for whatever is active. */
 
+/* Self-hosted font (latin subset): no third-party request blocks the first paint */
+@font-face {
+  font-family: 'Schibsted Grotesk';
+  font-style: normal;
+  font-weight: 400 900;
+  font-display: swap;
+  src: url(assets/fonts/schibsted-grotesk-normal-400-900.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root {
   --green: #0f4c45;
   --green-deep: #0a3732;
@@ -199,8 +209,8 @@ a.chip:hover .chip-shot img { transform: scale(1.04); }
   .stage-line { animation: rise 0.8s var(--ease) 0.7s both; }
 }
 @keyframes fan { from { transform: rotate(0deg); } }
-@keyframes settle { from { transform: translateY(18px); opacity: 0; } }
-@keyframes rise { from { transform: translateY(10px); opacity: 0; } }
+@keyframes settle { from { transform: translateY(18px); } }
+@keyframes rise { from { transform: translateY(10px); } }
 .pin { animation: none; }
 .annotated.pre .pin { transform: scale(0); }
 .annotated .pin { transition: transform 0.45s var(--ease) var(--pd, 0ms), background-color 0.2s; }
@@ -245,3 +255,6 @@ a.chip:hover .chip-shot img { transform: scale(1.04); }
   .foot-row { grid-template-columns: 1fr; }
   .pin { width: 24px; height: 24px; margin: -12px 0 0 -12px; font-size: 0.72rem; }
 }
+
+/* Footer email: comfortable tap height on phones */
+.foot a { display: inline-block; padding: 4px 0; }
