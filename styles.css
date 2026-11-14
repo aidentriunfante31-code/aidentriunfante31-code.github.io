@@ -167,6 +167,7 @@ a.chip:hover .chip-shot img { transform: scale(1.04); }
 .palette li { display: flex; justify-content: space-between; align-items: flex-end; gap: 10px; min-height: 52px; padding: 8px 12px; background: var(--c); font-size: 0.8rem; font-weight: 700; color: #fff; }
 .palette li:nth-child(3) { color: var(--ink); }
 .palette li:nth-child(2) { color: var(--ink); }
+.palette li[style*="--t"] { color: var(--t); }
 .palette code { font-family: var(--font); font-weight: 500; opacity: 0.85; font-variant-numeric: tabular-nums; }
 .palette p { margin-top: 14px; font-size: 0.88rem; color: var(--muted); }
 
